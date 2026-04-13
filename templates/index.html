@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Om Patel | Portfolio</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Arial', sans-serif; background: #f5f5f5; color: #333; }
+
+        /* NAV */
+        nav {
+            background: #1a1a2e;
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav .logo { color: white; font-size: 20px; font-weight: bold; }
+        nav .logo span { color: #e94560; }
+        nav a { color: #ccc; text-decoration: none; margin-left: 25px; font-size: 14px; }
+        nav a:hover { color: #e94560; }
+
+        /* HERO */
+        .hero {
+            background: linear-gradient(135deg, #1a1a2e, #16213e);
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .hero h1 { font-size: 48px; margin-bottom: 10px; }
+        .hero h1 span { color: #e94560; }
+        .hero p { font-size: 18px; color: #aaa; margin-bottom: 30px; }
+        .hero .badges { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; }
+        .badge {
+            background: #e94560;
+            color: white;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 13px;
+        }
+
+        /* SECTIONS */
+        section { padding: 60px 40px; max-width: 900px; margin: 0 auto; }
+        h2 { font-size: 28px; margin-bottom: 30px; border-left: 4px solid #e94560; padding-left: 12px; }
+
+        /* CARDS */
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 25px 30px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        .card h3 { font-size: 18px; color: #1a1a2e; }
+        .card .meta { color: #e94560; font-size: 13px; margin: 5px 0 10px; }
+        .card p, .card li { color: #555; font-size: 14px; line-height: 1.7; }
+        .card ul { padding-left: 18px; }
+
+        /* SKILLS */
+        .skills-grid { display: flex; flex-wrap: wrap; gap: 10px; }
+        .skill {
+            background: #1a1a2e;
+            color: white;
+            padding: 8px 18px;
+            border-radius: 20px;
+            font-size: 13px;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #1a1a2e;
+            color: #aaa;
+            text-align: center;
+            padding: 30px;
+            font-size: 13px;
+        }
+        footer a { color: #e94560; text-decoration: none; }
+    </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+    <div class="logo">Om<span>.</span>dev</div>
+    <div>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+    </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+    <h1>Hi, I'm <span>Om Patel</span> 👋</h1>
+    <p>CS Student @ Roosevelt University | Python & Java Developer | AI App Builder | May 2026</p>
+    <div class="badges">
+        <span class="badge">Python</span>
+        <span class="badge">Java</span>
+        <span class="badge">Flask</span>
+        <span class="badge">SQL</span>
+        <span class="badge">Machine Learning</span>
+        <span class="badge">Open to SWE Internships</span>
+    </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2>About Me</h2>
+    <div class="card">
+        <p>CS student at Roosevelt University (GPA: 3.65/4.0) passionate about building real-world software that solves real problems. I've built AI-powered applications using Python, Flask, and OpenAI APIs — including a clinical notes summarizer powered by RAG pipelines that cut review time by 40%. I also led the full product roadmap for a student housing platform, driving 12+ features and cutting user onboarding time in half through 15+ user interviews and data-driven decisions.</p>
+        <br>
+        <p>Beyond coding, I bring a product mindset — I don't just build features, I think about why they matter. Currently seeking SWE internships or entry-level roles for Summer/Fall 2026.</p>
+    </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+    <h2>Experience</h2>
+
+    <div class="card">
+        <h3>Founder & Product Lead — Dormaway</h3>
+        <div class="meta">Aug 2025 – Present | Remote | Self-employed</div>
+        <ul>
+            <li>Owned full product roadmap, driving 12+ features across 3 sprints</li>
+            <li>Conducted 15+ user interviews and translated findings into 30+ technical requirements</li>
+            <li>Cut average onboarding time from ~8 minutes to under 4 minutes, improving usability scores by ~20%</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3>Front Desk Receptionist & Medical Assistant — Suburban Medical Wellness Center</h3>
+        <div class="meta">May 2025 – Sep 2025 | Hanover Park, IL | Full-time</div>
+        <ul>
+            <li>Managed patient check-in for 50+ daily visits using eClinicalWorks EHR</li>
+            <li>Built Excel macros to automate intake tasks, reducing processing time by ~30%</li>
+            <li>Supported 3 providers across 10+ appointments per shift</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3>Member & Developer — Roosevelt University Robotics Club</h3>
+        <div class="meta">Jan 2025 – Apr 2025 | Chicago, IL</div>
+        <ul>
+            <li>Built 2 prototype robots in Java/Python with obstacle-avoidance algorithm achieving 95% accuracy</li>
+            <li>Authored technical documentation, cutting new member onboarding time by ~25%</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3>Sales Representative — Vector Marketing</h3>
+        <div class="meta">Jun 2023 – Aug 2023 | Wheaton, IL | Full-time</div>
+        <ul>
+            <li>Conducted in-person product demonstrations and managed personal appointment schedule</li>
+            <li>Built lasting customer relationships through consistent follow-ups</li>
+        </ul>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div class="card">
+        <h3>MediSumAI — Clinical Notes Summarizer</h3>
+        <div class="meta">Jan 2026 – Present | Python, OpenAI API, Flask, ChromaDB</div>
+        <ul>
+            <li>Built a Flask web app using OpenAI API to summarize clinical notes, cutting review time by ~40%</li>
+            <li>Implemented RAG pipeline using ChromaDB, improving summary accuracy across 100+ test records</li>
+            <li>Designed interface allowing medical staff to upload notes and export AI-generated PDF summaries</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3>Dormaway — Student Housing Platform</h3>
+        <div class="meta">Aug 2025 – Present | Product Lead & Developer</div>
+        <ul>
+            <li>Owned full product roadmap across 3 sprints, shipping 12+ features</li>
+            <li>Conducted 15+ user interviews, translating findings into 30+ technical requirements</li>
+            <li>Reduced onboarding time from ~8 minutes to under 4 minutes</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3>Transfer Student Credit Evaluation System</h3>
+        <div class="meta">Feb 2026 – Present | Python, SQL | CST 378 – Software Engineering</div>
+        <ul>
+            <li>Built backend logic to automate credit equivalency matching across 200+ course records</li>
+            <li>Achieved 100% rule-enforcement accuracy, cutting manual evaluation time by ~60%</li>
+        </ul>
+    </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+    <h2>Education</h2>
+
+    <div class="card">
+        <h3>Roosevelt University — Chicago, IL</h3>
+        <div class="meta">Aug 2022 – May 2026 | B.S. Computer Science | GPA: 3.65/4.0</div>
+        <p>Coursework: Data Structures, Algorithms, Operating Systems, Database Systems, AI, Software Engineering</p>
+    </div>
+
+    <div class="card">
+        <h3>South Elgin High School</h3>
+        <div class="meta">2018 – 2022 | High School Diploma | GPA: 3.83/4.0</div>
+        <p>Focus: Computer and Information Sciences</p>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="card">
+        <div class="skills-grid">
+            <span class="skill">Python</span>
+            <span class="skill">Java</span>
+            <span class="skill">SQL</span>
+            <span class="skill">Flask</span>
+            <span class="skill">Machine Learning</span>
+            <span class="skill">HTML/CSS</span>
+            <span class="skill">Git/GitHub</span>
+            <span class="skill">OpenAI API</span>
+            <span class="skill">Linux</span>
+            <span class="skill">Cloud Computing</span>
+            <span class="skill">Data Analysis</span>
+            <span class="skill">CI/CD</span>
+            <span class="skill">Project Management</span>
+            <span class="skill">eClinicalWorks</span>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>📍 Chicago, IL &nbsp;|&nbsp; 📧 <a href="mailto:ompatel0103@gmail.com">ompatel0103@gmail.com</a> &nbsp;|&nbsp; <a href="https://linkedin.com/in/om-patel-02425b240" target="_blank">LinkedIn</a></p>
+    <br>
+    <p>Built with Flask & Python by Om Patel</p>
+</footer>
+
+</body>
+</html>
